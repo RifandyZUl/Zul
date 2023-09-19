@@ -1,0 +1,52 @@
+package fasilkomm;
+
+public class FASILKOM {
+    
+    private static String setNama;
+    private static int setNim;
+    private static String setJurusan;
+    public String nama;
+    public String jurusan;
+    public int nim;
+    
+    public  FASILKOM (String nama, String jurusan, int nim)
+            {
+                this.nama = nama;
+                this.nim = nim;
+                this.jurusan = jurusan;
+            }
+    
+    public String getNama() {
+        return this.nama;
+    }
+    
+    public void setnama(String nama) {
+        this.nama = nama;
+    }
+    
+    public void getJurusan(){
+        return this.jurusan;
+    }
+    
+    public void setjurusan(String jurusan) {
+        this.jurusan = jurusan;
+    }
+    public int getNim(){
+        return this.nim;
+    }
+    
+    public void setNim(){
+        this.nim = nim;
+    }
+            
+    public static void main(String[] args) {
+      FASILKOM fasilkomm = new FASILKOM("zul tiandra", "teknik imformatika", 87 );
+      
+      System.out.println("nama saya : " + fasilkomm.nama);
+      System.out.println("jurusan saya : " + fasilkomm.jurusan);
+      System.out.println("nim saya : " + fasilkomm.nim);
+     
+                 
+    }
+    
+}
